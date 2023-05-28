@@ -375,3 +375,26 @@ main {
     justify-content: space-between;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue2: #fff;
+    --blue: #0079ff;
+    --body-bg-color: #141d2f;
+    --bg-color: #1e2a47;
+    --bio-and-p-text-color: #fff;
+    --text-color: #fff;
+    --secound-text-color: #fff;
+  }
+
+  .dark-theme {
+    --blue: #0079ff;
+    --blue2: #0079ff;
+    --secound-text-color: #697c9a;
+    --bio-and-p-text-color: #4b6a9b;
+    --text-color: #2b3442;
+    --body-bg-color: #f6f8ff;
+    --bg-color: #fefefe;
+    --error: #f74646;
+  }
+}

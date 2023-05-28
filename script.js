@@ -29,6 +29,17 @@ mode.addEventListener("click", () => {
   }
 });
 
+mode.addEventListener("click", () => {
+  document.body.classList.toggle("light_theme");
+  if (document.body.classList.contains("light_theme")) {
+    modeIcon.src = "/assets/icon-moon.svg";
+    modeText.innerText = "Dark";
+  } else {
+    modeIcon.src = "/assets/icon-sun.svg";
+    modeText.innerText = "Light";
+  }
+});
+
 submitButton.addEventListener("click", () => {
   if (seachBar.value !== "") {
     getUserData(url + seachBar.value);
